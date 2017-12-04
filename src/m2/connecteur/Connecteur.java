@@ -19,6 +19,10 @@ public abstract class Connecteur implements ElementArchi{
 		return roleRequis;
 	}
 	
+	public String getDescriptif() {
+		return "Je suis un connecteur!";
+	}
+	
 	public abstract void glueAtoB();
 	public abstract void glueBtoA();
 	

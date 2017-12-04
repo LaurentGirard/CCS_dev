@@ -5,7 +5,7 @@ import java.util.List;
 
 import m2.elts_architecturaux.ElementArchi;
 
-public abstract class Composant implements ElementArchi{
+public class Composant implements ElementArchi{
 
 	private PortComposant portRequis;
 	private PortComposant portFournis;
@@ -22,6 +22,9 @@ public abstract class Composant implements ElementArchi{
 		this.serviceFournis = serviceFournis;
 		proprietesFonctionnelles = new ArrayList<>();
 		proprietesNonFonctionnelles = new ArrayList<>();
+	}
+	public String getDescriptif() {
+		return "Je suis un composant!";
 	}
 	
 	public PortComposant getPortRequis() {
