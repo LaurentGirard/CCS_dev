@@ -5,16 +5,16 @@ import java.util.List;
 
 import m2.elts_architecturaux.ElementArchi;
 
-public class Composant implements ElementArchi{
+public abstract class Composant implements ElementArchi{
 
-	private PortComposant portRequis;
-	private PortComposant portFournis;
+	private IPortComposant portRequis;
+	private IPortComposant portFournis;
 	private ServiceComposant serviceRequis;
 	private ServiceComposant serviceFournis;
 	private List<String> proprietesFonctionnelles;
 	private List<String> proprietesNonFonctionnelles;
 	
-	public Composant(PortComposant portRequis, PortComposant portFournis, ServiceComposant serviceRequis,
+	public Composant(PortComposantRequis portRequis, PortComposantFournis portFournis, ServiceComposant serviceRequis,
 			ServiceComposant serviceFournis) {
 		this.portRequis = portRequis;
 		this.portFournis = portFournis;
@@ -27,10 +27,10 @@ public class Composant implements ElementArchi{
 		return "Je suis un composant!";
 	}
 	
-	public PortComposant getPortRequis() {
+	public IPortComposant getPortRequis() {
 		return portRequis;
 	}
-	public PortComposant getPortFournis() {
+	public IPortComposant getPortFournis() {
 		return portFournis;
 	}
 	public ServiceComposant getServiceRequis() {

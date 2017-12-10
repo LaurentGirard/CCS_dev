@@ -1,10 +1,10 @@
 package m2.elts_architecturaux;
 
 import m2.composant.Composant;
-import m2.composant.PortComposant;
+import m2.composant.IPortComposant;
 import m2.composant.ServiceComposant;
 import m2.configuration.Configuration;
-import m2.configuration.PortConfiguration;
+import m2.configuration.IPortConfiguration;
 import m2.configuration.ServiceConfiguration;
 
 public class MainM2 {
@@ -12,7 +12,7 @@ public class MainM2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		PortComposant pc1 = new PortComposant();
+	/*	PortComposant pc1 = new PortComposant();
 		PortComposant pc2 = new PortComposant();
 		ServiceComposant sc1 = new ServiceComposant();
 		ServiceComposant sc2 = new ServiceComposant();
@@ -44,7 +44,7 @@ public class MainM2 {
 		config2.add(c2);
 		
 		
-		System.out.println(config1.getDescriptif());
+		System.out.println(config1.getDescriptif());*/
 		
 		
 	}

@@ -8,12 +8,12 @@ import m2.composant.Composant;
 import m2.elts_architecturaux.ElementArchi;
 
 
-public class Configuration implements ElementArchi{
+public abstract class Configuration implements ElementArchi{
 	
 	private String descriptif;
 	private List<ElementArchi> children;
-	private PortConfiguration portRequis;
-	private PortConfiguration portFournis;
+	private IPortConfiguration portRequis;
+	private IPortConfiguration portFournis;
 	private ServiceConfiguration serviceRequis;
 	private ServiceConfiguration serviceFournis;
 	
@@ -24,7 +24,7 @@ public class Configuration implements ElementArchi{
 	 */
 	
 	
-	public Configuration(PortConfiguration portR, PortConfiguration portF,
+	public Configuration(PortConfigRequis portR, PortConfigFournis portF,
 			ServiceConfiguration serviceR, ServiceConfiguration serviceF ) {		
 		portRequis = portR;
 		portFournis = portF;
@@ -87,10 +87,10 @@ public class Configuration implements ElementArchi{
     }
 
 	
-	public PortConfiguration getPortRequis() {
+	public IPortConfiguration getPortRequis() {
 		return portRequis;
 	}
-	public PortConfiguration getPortFournis() {
+	public IPortConfiguration getPortFournis() {
 		return portFournis;
 	}
 	public ServiceConfiguration getServiceRequis() {

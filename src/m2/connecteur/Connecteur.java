@@ -4,18 +4,18 @@ import m2.elts_architecturaux.ElementArchi;
 
 public abstract class Connecteur implements ElementArchi{
 	
-	private Role roleFournis;
-	private Role roleRequis;
+	private IRole roleFournis;
+	private IRole roleRequis;
 	
-	public Connecteur(Role roleFournis, Role roleRequis) {
+	public Connecteur(RoleFournis roleFournis, RoleRequis roleRequis) {
 		this.roleFournis = roleFournis;
 		this.roleRequis = roleRequis;
 	}
 	
-	public Role getRoleFournis() {
+	public IRole getRoleFournis() {
 		return roleFournis;
 	}
-	public Role getRoleRequis() {
+	public IRole getRoleRequis() {
 		return roleRequis;
 	}
 	

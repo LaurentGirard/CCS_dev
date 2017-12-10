@@ -1,5 +1,5 @@
 package m2.connecteur;
 
-public class Role {
+public interface IRole {
 
 }
