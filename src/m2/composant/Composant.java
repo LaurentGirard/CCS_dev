@@ -7,15 +7,16 @@ import m2.elts_architecturaux.ElementArchi;
 
 public abstract class Composant implements ElementArchi{
 
-	private IPortComposant portRequis;
-	private IPortComposant portFournis;
+	protected PortComposantRequis portRequis;
+	protected PortComposantFournis portFournis;
 	private ServiceComposant serviceRequis;
 	private ServiceComposant serviceFournis;
 	private List<String> proprietesFonctionnelles;
 	private List<String> proprietesNonFonctionnelles;
 	
 	public Composant(PortComposantRequis portRequis, PortComposantFournis portFournis, ServiceComposant serviceRequis,
-			ServiceComposant serviceFournis) {
+			ServiceComposant serviceFournis) {		
+		
 		this.portRequis = portRequis;
 		this.portFournis = portFournis;
 		this.serviceRequis = serviceRequis;
@@ -27,10 +28,10 @@ public abstract class Composant implements ElementArchi{
 		return "Je suis un composant!";
 	}
 	
-	public IPortComposant getPortRequis() {
+	public PortComposantRequis getPortRequis() {
 		return portRequis;
 	}
-	public IPortComposant getPortFournis() {
+	public PortComposantFournis getPortFournis() {
 		return portFournis;
 	}
 	public ServiceComposant getServiceRequis() {

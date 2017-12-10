@@ -4,18 +4,18 @@ import m2.elts_architecturaux.ElementArchi;
 
 public abstract class Connecteur implements ElementArchi{
 	
-	private IRole roleFournis;
-	private IRole roleRequis;
+	protected RoleFournis roleFournis;
+	protected RoleRequis roleRequis;
 	
 	public Connecteur(RoleFournis roleFournis, RoleRequis roleRequis) {
 		this.roleFournis = roleFournis;
 		this.roleRequis = roleRequis;
 	}
 	
-	public IRole getRoleFournis() {
+	public RoleFournis getRoleFournis() {
 		return roleFournis;
 	}
-	public IRole getRoleRequis() {
+	public RoleRequis getRoleRequis() {
 		return roleRequis;
 	}
 	
@@ -23,8 +23,8 @@ public abstract class Connecteur implements ElementArchi{
 		return "Je suis un connecteur!";
 	}
 	
-	public abstract void glueAtoB();
-	public abstract void glueBtoA();
+	public abstract void glueAtoB(String s);
+	public abstract void glueBtoA(String s);
 	
 
 }

@@ -12,8 +12,8 @@ public abstract class Configuration implements ElementArchi{
 	
 	private String descriptif;
 	private List<ElementArchi> children;
-	private IPortConfiguration portRequis;
-	private IPortConfiguration portFournis;
+	private PortConfigRequis portRequis;
+	private PortConfigFournis portFournis;
 	private ServiceConfiguration serviceRequis;
 	private ServiceConfiguration serviceFournis;
 	
@@ -87,10 +87,10 @@ public abstract class Configuration implements ElementArchi{
     }
 
 	
-	public IPortConfiguration getPortRequis() {
+	public PortConfigRequis getPortRequis() {
 		return portRequis;
 	}
-	public IPortConfiguration getPortFournis() {
+	public PortConfigFournis getPortFournis() {
 		return portFournis;
 	}
 	public ServiceConfiguration getServiceRequis() {

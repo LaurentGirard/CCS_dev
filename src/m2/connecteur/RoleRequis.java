@@ -1,6 +1,17 @@
 package m2.connecteur;
 
-public class RoleRequis implements IRole{
+public abstract class RoleRequis implements IRole{
 
-	private Connecteur connect;
+	protected Connecteur connect;
+	
+	public RoleRequis () {
+	}
+	
+	public void setConnecteur(Connecteur connector) {
+		connect = connector;
+	}
+	
+	public void sendMessage(String s) {
+		
+	}
 }

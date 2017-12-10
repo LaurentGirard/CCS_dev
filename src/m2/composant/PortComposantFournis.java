@@ -1,11 +1,20 @@
 package m2.composant;
 
+import java.util.ArrayList;
 import java.util.List;
+import m2.elts_architecturaux.*;
 
-import m2.elts_architecturaux.AttachmentToRole;
-
-public abstract class PortComposantFournis implements IPortComposant{
+public class PortComposantFournis implements IPortComposant{
 	
-	private List<AttachmentToRole> attachments;
+	protected List<AttachmentToRole> attachments;
+	
+	public PortComposantFournis() {
+		attachments = new ArrayList<AttachmentToRole>();
+	}
+	
+	public void addAttachment(AttachmentToRole atta) {
+		attachments.add(atta);
+	}
+
 
 }

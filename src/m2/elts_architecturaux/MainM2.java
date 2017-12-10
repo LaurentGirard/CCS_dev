@@ -12,7 +12,9 @@ public class MainM2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-	/*	PortComposant pc1 = new PortComposant();
+	/* TEST PATTERN COMPOSITE
+	 * 
+	 * 	PortComposant pc1 = new PortComposant();
 		PortComposant pc2 = new PortComposant();
 		ServiceComposant sc1 = new ServiceComposant();
 		ServiceComposant sc2 = new ServiceComposant();
